@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio1</title>
+</head>
+<body>
+<script>
+        function fibonacci(num) {
+        if (num < 2) {
+        return num;
+    } else {
+        return fibonacci(num - 1) + fibonacci(num - 2);
+    }
+    }
+
+        const nTerms = prompt('Numero de Elementos: ');
+
+        if (nTerms <= 0) {
+        console.log('Ingrese un numero superior a cero.');
+    } else {
+        for (let i = 0; i < nTerms; i++) {
+        console.log(fibonacci(i));
+    }
+    }
+</script>
+</body>
+</html>
